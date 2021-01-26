@@ -1,11 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio web de animales</title>
+	<link rel="icon" type="favicon" href="images/printed2.ico">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="carlos">
+	<meta name="description" content="fundación colombiana sin ánimos de lucro que tiene como objetivo principal ayudar a los gatos en condición de abandono, maltrato y necesidad">
+	<meta name="keywords" content="gatos, fundación, animales">
+	<title>Felinos Felices de Colombia</title>
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/main-mobile.css">
+	<link rel="stylesheet" href="styles/main-desktop.css" media="(min-width: 800px)">
 </head>
-<body>
-    <h1>Sitio web en construcción</h1>
+<body id="top" class="body">
+	<header class="header">
+			<div class="header-left">
+				<a href="index.html" class="enla">
+				<img src="images/printed2.svg" alt="Felinos Felices de Colombia" class="header-cat">
+				</a>
+				<h1 class="main-title">Felinos Felices de Colombia</h1>
+			</div>
+			<div class="header-right">
+				<div class="sign">
+					<a class="fuentes-2" href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Iniciar sesión</a>
+				</div>
+				<div class="menu-mobile">
+					<h3>Menú</h3>
+				</div>
+			</div>
+		</header>
+	<nav class="menu-desktop">
+			<ul>
+				<li title="Principal">
+					<a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Principal</a>
+				</li>
+				<li title="Ayuda">
+					<a href="#datos">Ayuda</a>
+				</li>
+				<li title="Contacto">
+					<a href="#datos">Contacto</a>
+				</li>
+				<li title="Contacto">
+					<a href="#datos">Contacto</a>
+				</li>
+				<li title="Contacto">
+					<a href="#datos">Contacto</a>
+				</li>
+			</ul>
+			<input type="search" name="buscar" class="search" placeholder=" buscar información gatuna">
+	</nav>
+	<div class="principal-container">
+		<section class="section">
+			<article class="article">
+				<h2 title="La vida de los gatos de calle.">La vida de los gatos de calle</h2>
+				<h3>Subtítulo del primer artículo</h3>
+				<time datetime="29/04/2020">Publicado el 29/04/2020</time>
+				<div class="img">
+					<img src="images/cat1.jpeg" width="300px" height="340px" alt="Es una imagen de prueba bien chida">
+				</div>
+				<p class="fuentes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
+				Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<footer class="fuentes">Comentarios</footer>
+				<address>
+					<a href="https://www.linkedin.com/feed/" target="blank">Visita mi perfil en LinkedIn</a>
+				</address>
+			</article>
+			<article class="article">
+				<h2>La vida de los perros de calle</h2>
+				<h3>Subtítulo del segundo artículo</h3>
+				<time datetime="29/04/2020">Publicado el 29/04/2020</time>
+				<div class="img">
+					<img src="images/cat2.jpg" width="300px" height="340px" alt="Es una imagen de prueba bien chida">
+				</div>
+				<p class="fuentes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. <var>Utaaaa</var> enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
+				 Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.</p>
+				<footer class="fuentes">Comentarios</footer>
+				<address>
+					<a href="https://www.linkedin.com/feed/" target="blank" title="Visita mi LinkedIn">Visita mi perfil en LinkedIn</a>
+				</address>
+			</article>
+		</section>
+		<div class="lateral">
+			<h2>Mira a nuestros gatunos</h2>
+			<video src="media/gatos.mp4" controls class="video" width="100%"></video>
+			<h2>Cómo ubicarnos</h2>
+			<div class="mapa">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.4605627424864!2d-72.51842469796004!3d7.79817549103267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e664727886af6d9%3A0x6c2a57ba6df5cc11!2sMerkcosta!5e0!3m2!1ses!2sco!4v1588788832419!5m2!1ses!2sco" width="100%" height="500rem" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="adoption-form">
+		<form>
+				<h2>Aparta una cita de adopción con nosotros</h2>
+				<fieldset>
+				<legend>Tus datos personales</legend>
+				<!--Atento con el atributo read only-->
+				<div>
+					<label>
+						Ingrese su correo
+					<input type="email" placeholder="correo electrónico">
+					</label>
+				</div>
+				<div>
+					<label>
+						Ingrese su fecha de nacimiento
+						<input type="date">
+					</label>
+				</div>
+				</fieldset>
+				<div>
+					<label>
+					Ingrese su cantidad a comprar
+					<input type="number" placeholder="cantidad">
+					</label>
+				</div>
+				<fieldset>
+					<legend>Seleccione su género</legend>
+					<label>
+						Masculino
+						<input type="radio" name="gender">
+					</label>
+					<label>
+						Femenino
+						<input type="radio" name="gender">
+					</label>
+					<label>
+						Sin especificar
+						<input type="radio" name="gender">
+					</label>
+					</fieldset>
+					<fieldset>
+					<legend>Selecciona tu país</legend>
+					<label for="country">Escoge tu país</label>
+					<select name="country" id="country">
+					<option value="co">Colombia</option>
+					<option value="pe">Perú</option>
+					<option value="ve">Venezuela</option>
+				</select>
+				</fieldset>
+				<input type="submit" value="Iniciar sesión">
+			</div>
+		</form>
+	</div>
+	<footer class="footer" id="datos">
+			<p>Derechos reservados 2010-2020</p>
+			<p><a href="#top" class="ojo">ir al inicio</a></p>
+		</footer>
 </body>
 </html>
