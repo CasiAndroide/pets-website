@@ -17,7 +17,6 @@
 	background-attachment: fixed;
 	background-size: 12rem;
 	background-position: 8% 8%;
-	width: 100%;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -157,7 +156,6 @@ h3 {
 
 .principal-container {
 	background-color: transparent;
-	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
@@ -248,4 +246,7 @@ h3 {
 
 .mapa {
 	width: 100%;
+}
+main, .formulario {
+	max-width: 1200px;
 }
