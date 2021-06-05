@@ -1,40 +1,37 @@
 
 /*Estilos de las fuentes*/
 
-.fuentes-1 {
+.fuente-titulo-h1 {
 	font-size: 3rem;
 	font-family: sans-serif;
 	color: #365763;
 	text-align: left;
-	padding: 0.4rem;
 }
 
-.fuentes-2 {
-	font-size: 0.8rem;
+.fuente-titulo-h2 {
+	font-size: 2rem;
+	font-family: sans-serif;
+	color: #365763;
+	text-align: left;
+}
+
+.fuente-parrafo-banner {
+	font-size: 0.9em;
 	font-family: sans-serif;
 	color: #365763;
 }
 
-h2 {
-	font-size: 1.55rem;
+.fuente-parrafo {
+	font-size: 0.9em;
 	font-family: sans-serif;
-	font-weight: bold;
-	color: #2d4852;
-	margin: 1.5rem 0 1.5rem 0;
-	text-align: center;
-}
-
-h3 {
-	font-size: 1.125rem;
-	font-family: sans-serif;
-	font-weight: bold;
 	color: #365763;
-	margin: 0 0 1rem 0;
 }
 
-/*Fin de estilos de las fuentes*/
-
-
+.fuente-botones {
+	font-size: 1rem;
+	font-family: sans-serif;
+	color: #ffffff;
+}
 
 /*Estilos del body*/
 
@@ -46,11 +43,23 @@ h3 {
 	height: 100vh;
 }
 
-/*Fin de estilos del body*/
+.prueba-arriba {
+	display: flex;
+	background-color: #b3b3b3;
+	
+}
 
+/*Estilos del bloque cabecera-menú*/
 
+.main-title {
+	font-size: 1.1rem;
+	font-family: sans-serif;
+	font-weight: bolder;
+	color: #ffffff;
+	text-shadow: 0.5px 0.5px 1px black;
+}
 
-/*Estilos del header*/
+/*Estilos de la cabecera*/
 
 .header {
 	background-color: #b3b3b3;
@@ -58,20 +67,18 @@ h3 {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
-	justify-content: space-between;
-	width: 100%;
- 	box-shadow: 0px 7px 6px -6px rgba(0,0,0,0.8);
+	justify-content: flex-start;
+	width: 30%;
 }
 
 .header-cat {
-	width: 2rem;
-	height: 2rem;
+	width: 2.5rem;
+	height: 2.5rem;
 	margin: 0.4375rem 0.9375rem 0.4375rem 0.9375rem;
 }
 
 
 .header-left {
-	width: 55%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -79,28 +86,44 @@ h3 {
 	justify-content: flex-start;
 }
 
-.header-right {
-	width: 45%;
+/*Estilos del menú*/
+
+.menu-desktop {
+
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 1.125rem;
+	text-decoration: none;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	align-items: center;
 	justify-content: flex-end;
+	align-items: center;
+	width: 70%;
 }
 
-.header-cat {
-  width: 2.5rem;
-  height: 2.5rem;
+.menu-desktop>ul {
+	display: flex;
+	  height: 100%
+}
+  
+.menu-desktop>ul>li {
+	  height: 100%;
+	display: flex;
+}
+  
+.menu-desktop>ul>li>a {
+	  color: #ffffff;
+	display: flex;
+	align-items: center;
+	margin: 0 1.5rem 0 1.5rem;
 }
 
-/*Fin de estilos del header*/
-
-
-
-/*main-banner new version*/ 
+/*Estilos del la sección principal*/ 
 
 .main-banner {
 	width: 100%;
+	padding: 0 7rem 0 7rem;
 	height: 75vh;
 	background-image: url(../images/banner-5.jpg);
 	background-size: cover;
@@ -112,89 +135,29 @@ h3 {
 	justify-content: center;
 }
 
-.main-banner > h1, .main-banner > p, .main-banner > button {
+h1, p {
 	width: 40rem;
-	margin: 0 0 0 7rem;
+	margin: 0 0 0 0;
+	padding: 2rem 0 2rem 0;
 }
 
-button {
-	width: 4rem;
-}
-
-/*main-banner new version end*/
-
-.main-title {
-	font-size: 1.1rem;
-	font-family: sans-serif;
-	font-weight: bolder;
-	color: #ffffff;
-	text-shadow: 0.5px 0.5px 1px black;
-}
-
-.sign	{
-	width: 50%;
-	height: 1.3rem;
-	display: flex;
-	background-color: #5990a6;
-	justify-content: center;
-	align-items: center;
+.boton-llamada-a-la-accion {
+	background-color: #ff5c33;
+	margin: 2rem 0 2rem 0;
+	padding: 1rem 0 1rem 0;
+	width: 12rem;
 	border-radius: 0.2rem;
-  margin: 0 1rem 0 0;
+	text-align: center;
+	color: white;
 }
 
-.menu-mobile {
-  display: none;
+/*Estilos de las secciones*/
+
+section {
+	padding: 0 2rem 0 2rem;
 }
 
-.menu-desktop {
-	background-color: #5990a6;
-  font-family: sans-serif;
-	font-weight: bold;
-	font-size: 1.125rem;
-  text-decoration: none;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-  justify-content: space-between;
-	width: 100%;
-  height: 2rem;
-  box-shadow: 0px 7px 6px -6px rgba(0,0,0,0.8);
-}
-
-.menu-desktop>ul {
-  display: flex;
-	height: 100%
-}
-
-.menu-desktop>ul>li {
-	height: 100%;
-  display: flex;
-}
-
-.menu-desktop>ul>li>a {
-	color: #ffffff;
-  display: flex;
-  align-items: center;
-  margin: 0 1.5rem 0 1.5rem;
-}
-
-.menu-desktop>ul>li:hover {
-	background-color: #446d98;
-	}
-
-  .sign a {
-    text-align: center;
-  }
-
-.search {
-  margin: 0.3rem 0.3rem 0.3rem 0;
-  font-size: 0.8rem;
-  width: 25%;
-  border-style: solid;
-  border-width: 0.1rem;
-  border-color: rgba(255,140,102,1);
-  border-radius: 0.2rem;
-}
+/*Estilos del pie de página*/
 
 .footer {
 	display: flex;
@@ -202,13 +165,17 @@ button {
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
-	padding: 1.5rem 0 1.5rem 0;
-	background: #5990a6;
+	padding: 0;
+	background: #b3b3b3;
 	color: white;
 	font-family: sans-serif;
 	font-weight: bold;
 	width:100%;
 	text-decoration: none;
-	box-shadow: 0px 5px 15px rgba(0,0,0,1);
 }
 
+.footer>p {
+	text-align: center;
+}
+
+/*Fin*/
