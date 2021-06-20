@@ -36,7 +36,7 @@
 /*Estilos del body*/
 
 .body {
-	background-image: url(../images/printed.svg);
+	/*background-image: url(../images/printed.svg);*/
 	background-attachment: fixed;
 	background-size: 12rem;
 	background-position: 8% 8%;
@@ -57,6 +57,7 @@
 	font-weight: bolder;
 	color: #ffffff;
 	text-shadow: 0.5px 0.5px 1px black;
+	
 }
 
 /*Estilos de la cabecera*/
@@ -135,10 +136,14 @@
 	justify-content: center;
 }
 
-h1, p {
+h1 {
 	width: 40rem;
 	margin: 0 0 0 0;
-	padding: 2rem 0 2rem 0;
+	padding: 0;
+}
+
+.main-banner > p {
+	width: 40rem;
 }
 
 .boton-llamada-a-la-accion {
@@ -153,8 +158,13 @@ h1, p {
 
 /*Estilos de las secciones*/
 
-section {
-	padding: 0 2rem 0 2rem;
+.secciones {
+	padding: 0 7rem 0 7rem;
+	background-color: red;
+}
+
+p {
+	width: 100%;
 }
 
 /*Estilos del pie de página*/

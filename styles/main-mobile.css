@@ -27,12 +27,19 @@ section {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top;
-
+	padding: 0;
 	justify-content: space-evenly;
 	align-items: center;
 }
 
-.main-banner>h1,p {
+.main-banner>h1 {
+	width: 100%;
+	padding: 0 1rem 0 1rem;
+	margin: 0;
+	text-align: center;
+}
+
+.main-banner>p {
 	width: 100%;
 	padding: 0 1rem 0 1rem;
 	margin: 0;
